@@ -4,8 +4,8 @@ Real-time face detection in Python using OpenCV and MediaPipe, packaged in Docke
 
 # Face Detector 🧠🎥
 
-![Python](https://img.shields.io/badge/python-3.11-blue)
-![License](https://img.shields.io/badge/license-Apache%202.0-green)
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![License](https://img.shields.io/badge/License-Apache%202.0-green)
 
 
 
