@@ -3,7 +3,7 @@
 Real-time face detection using OpenCV and MediaPipe packaged into a reproducible Docker image for consistent deployment and testing.
 
 Badges  
-![Python](https://img.shields.io/badge/Python-3.11-blue) ![License](https://img.shields.io/badge/License-Apache%202.0-green) ![Version](https://img.shields.io/badge/Version-1.0-darkblue?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.11-blue) ![License](https://img.shields.io/badge/License-Apache%202.0-green) ![Version](https://img.shields.io/badge/Version-1.0-darkblue?style=for-t[...] 
 
 ---
 
@@ -40,8 +40,6 @@ This project leverages modern tools and libraries for real-time face detection:
 
 
 
-
-
 ## Features
 
 - Real-time face detection from webcam (V4L2 / /dev/video* on Linux)
@@ -69,6 +67,13 @@ This project leverages modern tools and libraries for real-time face detection:
 **Not Supported:**  
 ![Android](https://img.shields.io/badge/Android-Not_supported_May_Be_Supported_In_Future-darkred)
 ![iOS](https://img.shields.io/badge/iOS-Not_supported-darkred)
+
+
+## Platform compatibility notes (brief)
+
+- Desktop (Linux, Windows, macOS): Linux is the primary tested platform. Windows and macOS may work via WSL2/X11 or similar, but camera passthrough and GUI forwarding can be fragile. I will not add extensive platform-specific helpers because this is outside the project scope and my main interest.
+- Mobile (Android, iOS): Not supported. Mobile requires native builds, different capture APIs and MediaPipe mobile packaging; I don't plan to implement mobile support due to lack of time/experience and significant platform-specific work.
+- GPU/CUDA: Possible but not provided by default. Building and maintaining CUDA-enabled images needs matching drivers, toolkits, and wheels across many configurations; I won't provide prebuilt GPU images to avoid maintenance complexity.
 
 ---
 
@@ -161,7 +166,7 @@ Windows specifics:
 
 ### Headless / Server (no GUI)
 
-If you only need to run detection and output results via logs or a socket (no display), run the container without X11 volumes and change the application to not spawn GUI windows or to save frames to disk:
+If you only need to run detection and output results via logs or a socket (no display), run the container without X11 volumes and change the application to not spawn GUI windows or to save frames[...]
 
 ```bash
 docker run --rm -it \
@@ -174,7 +179,7 @@ docker run --rm -it \
 
 ### Optional: GPU acceleration (NVIDIA)
 
-If you have an NVIDIA GPU and want to enable hardware acceleration for OpenCV or other CUDA-enabled libraries, use the NVIDIA container runtime and ensure the image is built with CUDA-enabled base image and dependencies. Example run command with nvidia runtime:
+If you have an NVIDIA GPU and want to enable hardware acceleration for OpenCV or other CUDA-enabled libraries, use the NVIDIA container runtime and ensure the image is built with CUDA-enabled bas[
 
 ```bash
 docker run --rm -it --gpus all \
