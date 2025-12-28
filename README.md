@@ -9,10 +9,9 @@ Badges
 
 ## Table of contents
 
-- [Overview](#overview)
+
 - [Features](#features)
 - [Architecture & Components](#architecture--components)
-- [Supported platforms](#supported-platforms)
 - [Requirements](#requirements)
 - [Build (from source)](#build-from-source)
 - [Run (container)](#run-container)
