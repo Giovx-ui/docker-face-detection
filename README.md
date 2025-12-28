@@ -41,17 +41,7 @@ This project leverages modern tools and libraries for real-time face detection:
 
 
 
-## Overview
 
-This project packages a Python application that performs real-time face detection using:
-
-- MediaPipe (face detection and landmarks pipeline)
-- OpenCV (video capture, display and processing)
-- NumPy (array operations)
-
-Packaging in Docker ensures the same runtime and dependency versions across environments.
-
----
 
 ## Features
 
