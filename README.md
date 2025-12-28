@@ -61,13 +61,15 @@ This project leverages modern tools and libraries for real-time face detection:
 
 ---
 
-## Supported platforms
+**Supported Platforms:**  
+![Debian](https://img.shields.io/badge/Debian_13-Tested-green)
+![Linux](https://img.shields.io/badge/Linux-Tested-brightgreen)
+![Windows](https://img.shields.io/badge/Windows-Should_Work-yellow)
+![MacOS](https://img.shields.io/badge/MacOS-Should_Work-yellow)
 
-- Debian 13 — tested
-- Generic Linux — tested
-- Windows — expected to work via WSL2 with X11 server (e.g., VcXsrv) or inside a Linux VM
-- macOS — should work with appropriate display forwarding (not extensively tested)
-- Mobile (Android / iOS) — not supported by this container (MediaPipe has mobile-specific packaging)
+**Not Supported:**  
+![Android](https://img.shields.io/badge/Android-Not_supported_May_Be_Supported_In_Future-darkred)
+![iOS](https://img.shields.io/badge/iOS-Not_supported-darkred)
 
 ---
 
