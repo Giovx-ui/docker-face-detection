@@ -20,5 +20,5 @@ STATUS:
 ![MacOS](https://img.shields.io/badge/MacOS-should_work-yellow)
 
 **Not Supported:**  
-![Android](https://img.shields.io/badge/Android-Not_supported-darkred)
+![Android](https://img.shields.io/badge/Android-Not_supported_May_Be_Supported_In_Future-darkred)
 ![iOS](https://img.shields.io/badge/iOS-Not_supported-darkred)
