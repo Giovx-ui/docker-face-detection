@@ -15,7 +15,8 @@
 ![Version](https://img.shields.io/badge/Version-1.0-darkblue?style=for-the-badge)
 
 **Supported Platforms:**  
-![Linux](https://img.shields.io/badge/Linux-tested-brightgreen)
+![Debian](https://img.shields.io/badge/Debian-13-tested-brightgreen)
+![Linux](https://img.shields.io/badge/Others_Linux_Distro-tested-brightgreen)
 ![Windows](https://img.shields.io/badge/Windows-should_work-yellow)
 ![MacOS](https://img.shields.io/badge/MacOS-should_work-yellow)
 
