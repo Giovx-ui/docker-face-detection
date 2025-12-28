@@ -17,4 +17,4 @@ RUN apt-get update && apt-get install -y \
 RUN pip install --upgrade pip
 RUN pip install opencv-python mediapipe numpy
 
-CMD ["python", "srcfile.py"]  # il tuo script
+CMD ["python", "srcfile.py"]  # your script
