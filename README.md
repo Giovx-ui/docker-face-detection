@@ -16,7 +16,7 @@
 
 **Supported Platforms:**  
 ![Debian](https://img.shields.io/badge/Debian-13-tested-brightgreen)
-![Linux](https://img.shields.io/badge/Others_Linux_Distro-tested-brightgreen)
+![Linux](https://img.shields.io/badge/Linux_-tested-brightgreen)
 ![Windows](https://img.shields.io/badge/Windows-should_work-yellow)
 ![MacOS](https://img.shields.io/badge/MacOS-should_work-yellow)
 
