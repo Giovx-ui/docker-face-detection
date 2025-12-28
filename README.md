@@ -10,12 +10,15 @@ Real-time face detection in Python using OpenCV and MediaPipe, packaged in Docke
 
 
 STATUS:
-    ![Version](https://img.shields.io/badge/Version:-1.0-darkblue?style=for-the-badge)
-    <br>
-    <br>
-    ![Linux](https://img.shields.io/badge/Linux-tested-brightgreen)
-    ![Windows](https://img.shields.io/badge/Windows-should_work-yellow)
-    ![MacOS](https://img.shields.io/badge/MacOS-should_work-yellow)
-    ![Android](https://img.shields.io/badge/Android-Shouldn't_work-darkred)       
-    ![IOS](https://img.shields.io/badge/IOS-Shouldn't_work-darkred)    
 
+**Version:**  
+![Version](https://img.shields.io/badge/Version-1.0-darkblue?style=for-the-badge)
+
+**Supported Platforms:**  
+![Linux](https://img.shields.io/badge/Linux-tested-brightgreen)
+![Windows](https://img.shields.io/badge/Windows-tested-yellow)
+![MacOS](https://img.shields.io/badge/MacOS-should_work-yellow)
+
+**Not Supported:**  
+![Android](https://img.shields.io/badge/Android-Not_supported-darkred)
+![iOS](https://img.shields.io/badge/iOS-Not_supported-darkred)
