@@ -71,7 +71,7 @@ This project leverages modern tools and libraries for real-time face detection:
 
 ## Platform compatibility notes (brief)
 
-- Desktop (Linux, Windows, macOS): Linux is the primary tested platform. Windows and macOS may work via WSL2/X11 or similar, but camera passthrough and GUI forwarding can be fragile. I will not add extensive platform-specific helpers because this is outside the project scope and my main interest.
+- Desktop (Linux, Windows, macOS): Linux is the primary tested platform. Windows and macOS may work via WSL2/X11 or similar, but camera passthrough and GUI forwarding can be fragile. I dont think i will add extensive platform-specific helpers because this is outside the project scope and my main interest.
 - Mobile (Android, iOS): Not supported. Mobile requires native builds, different capture APIs and MediaPipe mobile packaging; I don't plan to implement mobile support due to lack of time/experience and significant platform-specific work.
 - GPU/CUDA: Possible but not provided by default. Building and maintaining CUDA-enabled images needs matching drivers, toolkits, and wheels across many configurations; I won't provide prebuilt GPU images to avoid maintenance complexity.
 
