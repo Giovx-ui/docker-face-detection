@@ -172,10 +172,10 @@ If you only need to run detection and output results via logs or a socket (no di
 docker run --rm -it \
   --device=/dev/video0:/dev/video0 \
   giovx/docker-face-detection:1.0 \
-  python main.py --headless
+  python src.py --headless
 ```
 
-(Assumes `main.py` supports a `--headless` flag or an environment variable to disable GUI.)
+(Assumes `src.py` supports a `--headless` flag or an environment variable to disable GUI.)
 
 ### Optional: GPU acceleration (NVIDIA)
 
