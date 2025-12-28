@@ -1,4 +1,4 @@
-# Docker-face-detection
+**Docker-face-detection**
 **Real-time face detection in Python using OpenCV and MediaPipe, packaged in Docker for easy deployment.**  
 
 # Face Detector 🧠🎥
@@ -42,32 +42,33 @@ This project leverages modern tools and libraries for real-time face detection:
 
 # Usage
 
+Note: The repository's Dockerfile is located at docker/main.dockerfile. The examples below reference that path. Also the face detection model is models/detector.tflite and the Dockerfile in this repo copies it into the image.
+
 ## METHOD ONE: Build from Source
 
 **Linux:**
 ```bash
-sudo docker build -t giovx/docker-face-detection -f main.dockerfile .
-```
-**Windows**
-Build the Docker image:
-```bash
-docker build -t giovx/docker-face-detection -f main.dockerfile .
+sudo docker build -t giovx/docker-face-detection:1.0 -f docker/main.dockerfile .
 ```
 
+**Windows:**
+Build the Docker image (from repository root):
+```powershell
+docker build -t giovx/docker-face-detection:1.0 -f docker/main.dockerfile .
+```
+
+If you omit the :1.0 tag, Docker will tag the image as "latest"; the run examples below assume the :1.0 tag used in the build command.
 
 **Run the container:**
-**FOR LINUX AND ALSO WINDOWS(Windows For Linux)
-Option 1: Using WSL2 + X11 server (e.g., VcXsrv)**
+
+**FOR LINUX AND ALSO WINDOWS (using WSL2 + X11 server, e.g., VcXsrv)**
 
 ```bash
-docker run --rm -it `
-  --device=/dev/video0:/dev/video0 `
-  -e DISPLAY=$DISPLAY `
-  -v /tmp/.X11-unix:/tmp/.X11-unix `
+docker run --rm -it \
+  --device=/dev/video0:/dev/video0 \
+  -e DISPLAY=$DISPLAY \
+  -v /tmp/.X11-unix:/tmp/.X11-unix \
   giovx/docker-face-detection:1.0
 ```
 
-
-
 Option 2: Use a Linux VM if WSL2 is not available.
-
