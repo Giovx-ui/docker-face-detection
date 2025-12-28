@@ -16,7 +16,7 @@ STATUS:
 
 **Supported Platforms:**  
 ![Linux](https://img.shields.io/badge/Linux-tested-brightgreen)
-![Windows](https://img.shields.io/badge/Windows-tested-yellow)
+![Windows](https://img.shields.io/badge/Windows-should_work-yellow)
 ![MacOS](https://img.shields.io/badge/MacOS-should_work-yellow)
 
 **Not Supported:**  
