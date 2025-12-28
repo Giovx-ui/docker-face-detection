@@ -57,6 +57,11 @@ Build the Docker image (from repository root):
 docker build -t giovx/docker-face-detection:1.0 -f docker/main.dockerfile .
 ```
 
+**btw instead of building from source you can do like this:**
+```bash
+docker pull giovx/docker-face-detection:1.0
+```
+
 If you omit the :1.0 tag, Docker will tag the image as "latest"; the run examples below assume the :1.0 tag used in the build command.
 
 **Run the container:**
@@ -74,4 +79,49 @@ docker run --rm -it \
 Option 2: Use a Linux VM if WSL2 is not available.
 
 
+## MacOS:
+
+On MacOS, Docker can run natively, but accessing the webcam and the X server requires some extra steps. Since MacOS does not have X11 by default for GUI forwarding, the recommended way is to either use an X server like XQuartz or run the container inside a Linux virtual machine.
+
+### Option 1: Using XQuartz
+
+1. Install [XQuartz](https://www.xquartz.org/) and start it.
+2. Allow connections from network clients:
+   - Open **XQuartz > Preferences > Security**.
+   - Check **"Allow connections from network clients"**.
+3. In your terminal, allow local connections:
+```bash
+xhost + 127.0.0.1
+```
+
+**Build the Docker image**
+```bash
+docker build -t giovx/docker-face-detection -f main.dockerfile .
+```
+**then**
+```bash
+docker run --rm -it \
+  -e DISPLAY=host.docker.internal:0 \
+  giovx/docker-face-detection:1.0
+```
+**Option 2: Using a Linux VM**
+
+**Install a lightweight Linux VM (e.g., Ubuntu) via VirtualBox or VMware.**
+
+**Install Docker inside the VM.**
+
+**Build and run the Docker image exactly like you would on Linux:**
+
+```bash
+  sudo docker build -t giovx/docker-face-detection -f main.dockerfile .
+sudo docker run --rm -it \
+  --device=/dev/video0:/dev/video0 \
+  -e DISPLAY=$DISPLAY \
+  -v /tmp/.X11-unix:/tmp/.X11-unix \
+  giovx/docker-face-detection:1.0
+```
+
+**OR MAYBE JUST USE AN EASY METHOD, DONT DOCKERIZE THE PROJECT AND RUN THE PYTHON FILE, easy**
+
+**SOME PART OF THE README ARE REVISIONED OR WRITTEN BY AIs**
 
