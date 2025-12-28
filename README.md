@@ -3,7 +3,7 @@
 Real-time face detection using OpenCV and MediaPipe packaged into a reproducible Docker image for consistent deployment and testing.
 
 Badges  
-![Python](https://img.shields.io/badge/Python-3.11-blue) ![License](https://img.shields.io/badge/License-Apache%202.0-green) ![Version](https://img.shields.io/badge/Version-1.0-darkblue?style=for-t[...] 
+![Python](https://img.shields.io/badge/Python-3.11-blue) ![License](https://img.shields.io/badge/License-Apache%202.0-green) ![Version](https://img.shields.io/badge/Version-1.0-darkblue)
 
 ---
 
